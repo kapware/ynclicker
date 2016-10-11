@@ -9,7 +9,9 @@
    :response (s/enum :yes :no)
    :eventid s/Str})
 
-(def votes (e/file-atom {} "/tmp/addresses.clj" :pending-dir "/tmp"))
+(def votes-dir (System/getProperty "votes.dir" (System/getProperty "user.dir")))
+
+(def votes (e/file-atom {} (str votes-dir "/votes.clj") :pending-dir votes-dir))
 
 (defn vote! [vote]
   (do
