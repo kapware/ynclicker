@@ -26,8 +26,8 @@
      {:ui "/"
       :spec "/swagger.json"
       :data {:info {:title "Ynclicker"
-                    :description "Compojure Api example"}
-             :tags [{:name "api", :description "some apis"}]}}}
+                    :description "Yes No Clicker Api"}
+             :tags [{:name "api", :description "vote apis"}]}}}
 
     (context "/api" []
       :tags ["api"]

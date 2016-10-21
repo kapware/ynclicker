@@ -1,13 +1,12 @@
 (defproject ynclicker "0.1.0-SNAPSHOT"
-  :description "FIXME: write description"
+  :description "Yes No clicker backend app"
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [metosin/compojure-api "1.1.8"]
                  [alandipert/enduro "1.2.0"]]
   :min-lein-version "2.6.1"
   :ring {:handler ynclicker.handler/app}
   :uberjar-name "ynclicker.jar"
-  :profiles {:uberjar {:aot :all
-                       :main clj-krakus.main}
+  :profiles {:uberjar {:aot :all}
              :dev {:dependencies [[javax.servlet/javax.servlet-api "3.1.0"]
                                   [cider/cider-nrepl "0.14.0-SNAPSHOT"]]
                    :plugins [[ikitommi/lein-ring "0.9.8-FIX"]]
