@@ -19,6 +19,10 @@ java -jar target/server.jar
 
 `lein ring uberwar`
 
+### Running for development (with CIDER REPL)
+
+`lein with-profile dev ring server`
+
 ## License
 
 Copyright ©  FIXME
