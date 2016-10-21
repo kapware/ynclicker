@@ -1,6 +1,6 @@
 # ynclicker
 
-FIXME
+Yes/No clicker backend application.
 
 ## Usage
 
@@ -25,4 +25,4 @@ java -jar target/server.jar
 
 ## License
 
-Copyright ©  FIXME
+Copyright ©  kapware
