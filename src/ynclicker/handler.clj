@@ -14,10 +14,9 @@
 (def votes (e/file-atom {} (str votes-dir "/votes.clj") :pending-dir votes-dir))
 
 (defn vote! [vote]
-  (do
-    (let [eventid (:eventid vote)
-          token (:token vote)]
-      (e/swap! votes assoc-in [eventid token] vote))
+  (let [eventid (:eventid vote)
+        token (:token vote)]
+    (e/swap! votes assoc-in [eventid token] vote)
     vote))
 
 (def app

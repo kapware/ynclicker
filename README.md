@@ -23,6 +23,10 @@ java -jar target/server.jar
 
 `lein with-profile dev ring server`
 
+### Running autotesting
+
+`lein midje :autotest`
+
 ## License
 
 Copyright ©  kapware

@@ -8,8 +8,12 @@
   :uberjar-name "ynclicker.jar"
   :profiles {:uberjar {:aot :all}
              :dev {:dependencies [[javax.servlet/javax.servlet-api "3.1.0"]
-                                  [cider/cider-nrepl "0.14.0-SNAPSHOT"]]
-                   :plugins [[ikitommi/lein-ring "0.9.8-FIX"]]
+                                  [cider/cider-nrepl "0.14.0-SNAPSHOT"]
+                                  [cheshire "5.5.0"]
+                                  [ring/ring-mock "0.3.0"]
+                                  [midje "1.8.3"]]
+                   :plugins [[ikitommi/lein-ring "0.9.8-FIX"]
+                             [lein-midje "3.2"]]
                    :ring {:handler ynclicker.handler/app
                           :nrepl {:start? true}}
                    :repl-options {:nrepl-middleware
